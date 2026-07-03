@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Five Nights at Freddy's Collection</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+background:#000;
+font-family:'Special Elite',monospace;
+color:#fff;
+overflow-x:hidden;
+}
+
+body::before{
+content:"";
+position:fixed;
+inset:0;
+background:
+linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px);
+background-size:100% 4px;
+pointer-events:none;
+animation:flicker .15s infinite;
+}
+
+@keyframes flicker{
+50%{opacity:.92}
+}
+
+header{
+padding:40px 20px;
+text-align:center;
+}
+
+h1{
+font-size:42px;
+letter-spacing:4px;
+text-shadow:0 0 12px red;
+}
+
+p{
+color:#999;
+margin-top:10px;
+}
+
+.grid{
+width:min(1400px,95%);
+margin:auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+padding:30px;
+}
+
+.card{
+background:#111;
+border:1px solid #333;
+border-radius:12px;
+overflow:hidden;
+text-decoration:none;
+color:#fff;
+transition:.25s;
+}
+
+.card:hover{
+transform:scale(1.04);
+border-color:red;
+box-shadow:0 0 20px rgba(255,0,0,.5);
+}
+
+.card img{
+width:100%;
+height:300px;
+object-fit:cover;
+display:block;
+}
+
+.info{
+padding:15px;
+}
+
+.info h2{
+font-size:20px;
+margin-bottom:5px;
+}
+
+.info span{
+color:#999;
+font-size:14px;
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>FIVE NIGHTS AT FREDDY'S</h1>
+<p>Select a Game</p>
+</header>
+
+<div class="grid">
+
+<a class="card" href="./1/index.html">
+<img src="https://upload.wikimedia.org/wikipedia/en/4/4f/Five_Nights_at_Freddy%27s_cover.jpg">
+<div class="info">
+<h2>FNaF 1</h2>
+<span>Start Game</span>
+</div>
+</a>
+
+<a class="card" href="./2/index.html">
+<img src="https://upload.wikimedia.org/wikipedia/en/4/49/Five_Nights_at_Freddy%27s_2_cover.jpg">
+<div class="info">
+<h2>FNaF 2</h2>
+<span>Start Game</span>
+</div>
+</a>
+
+<a class="card" href="./3/index.html">
+<img src="https://upload.wikimedia.org/wikipedia/en/9/96/Five_Nights_at_Freddy%27s_3_cover.jpg">
+<div class="info">
+<h2>FNaF 3</h2>
+<span>Start Game</span>
+</div>
+</a>
+
+<a class="card" href="./4/index.html">
+<img src="https://upload.wikimedia.org/wikipedia/en/3/32/Five_Nights_at_Freddy%27s_4.jpg">
+<div class="info">
+<h2>FNaF 4</h2>
+<span>Start Game</span>
+</div>
+</a>
+
+<a class="card" href="./sl/index.html">
+<img src="https://upload.wikimedia.org/wikipedia/en/3/36/Five_Nights_at_Freddy%27s_Sister_Location.jpg">
+<div class="info">
+<h2>Sister Location</h2>
+<span>Start Game</span>
+</div>
+</a>
+
+<a class="card" href="./ps/index.html">
+<img src="https://static.wikia.nocookie.net/freddy-fazbears-pizza/images/7/75/FFPS_Header.jpg">
+<div class="info">
+<h2>Pizzeria Simulator</h2>
+<span>Start Game</span>
+</div>
+</a>
+
+<a class="card" href="./ucn/index.html">
+<img src="https://upload.wikimedia.org/wikipedia/en/3/37/Ultimate_Custom_Night.jpg">
+<div class="info">
+<h2>Ultimate Custom Night</h2>
+<span>Start Game</span>
+</div>
+</a>
+
+<a class="card" href="./w/index.html">
+<img src="https://upload.wikimedia.org/wikipedia/en/1/18/FNaF_World_cover.jpg">
+<div class="info">
+<h2>FNaF World</h2>
+<span>Start Game</span>
+</div>
+</a>
+
+</div>
+
+</body>
+</html>
